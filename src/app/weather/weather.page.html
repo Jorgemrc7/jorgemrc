@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Clima
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+<h2 style="text-align: center;">Escribe el nombre de la ciudad</h2>
+<ion-content class="container">
+  <ion-item class="cuadro-texto">
+    <ion-label position="floating">Ciudad</ion-label>
+    <ion-input type="text" [(ngModel)]="city"></ion-input>
+  </ion-item>
+  <ion-button expand="full" (click)="getWeather()">Obtener Clima</ion-button>
+
+  <div *ngIf="weatherResult">
+    <h2>{{ weatherResult.name }}, {{ weatherResult.sys.country }}</h2>
+    <p>Clima: {{ weatherResult.weather[0].description }}</p>
+    <p>Temperatura: {{ weatherResult.main.temp }}</p>
+    <p>Humedad: {{ weatherResult.main.humidity }}</p>
+    <p>Viento: {{ weatherResult.wind.speed }}</p>
+  </div>
+</ion-content>

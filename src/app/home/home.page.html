@@ -1,20 +1,49 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
+  <ion-header [translucent]="true" style="text-align: center;">
     <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
+      <ion-title size="large">Home</ion-title>
+      <ion-buttons slot="end">
+        <ion-button (click)="redireccion('/loginpage')">login <ion-icon name="enter-outline">
+        </ion-icon></ion-button>
+
+        <ion-button (click)="redireccion('/signin')">Signin <ion-icon name="clipboard-outline">
+        </ion-icon></ion-button>
+
+        <ion-button (click)="redireccion('/weather')" style="background: rgb(31, 253, 246);">Clima<ion-icon name="cloud">
+        </ion-icon></ion-button>
+
+        <ion-button (click)="redireccion('/conversor')" style="background: rgb(241, 188, 54);">Conversor<ion-icon name="Cash">
+        </ion-icon></ion-button>
+
+        <ion-button (click)="redireccion('/calculator')" style="background:rgb(176, 176, 176) ;">Calculadora<ion-icon name="Calculator">
+        </ion-icon></ion-button>
+      </ion-buttons>
     </ion-toolbar>
   </ion-header>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+  <ion-row justify-content-center align-items-center style="height: 100%;" id="cuadro">
+    <ion-col size="12" size-md="8" size-lg="6">
+      <ion-card>
+        <ion-card-header style="background-color: rgb(127, 238, 255);">
+          <ion-card-title style="text-align: center;">Jorge Manuel Rangel Castillo </ion-card-title>
+          <img src="assets/icon/FotoPerfil.png" width="10%" height="10%" id="foto">
+        </ion-card-header>
+        <ion-card-content style="color: black; background-color: rgb(127, 238, 255);" >
+          Contactos: <br>Calle Nuevo Mileno #114, Ampliación La Gloria. <br>
+          Correo: <br> <a>jorgemrc138gmail.com</a> <br>
+          Número telefonico: <br> 4642031577 <br>
+          <br>
+          Universidad Tecnologica de Salamanca <br>
+          <br>
+          Virtudes:<ul><li>Trabaja en equipo.</li><li>Responsable</li><li>Puntual</li><li>Respetuoso</li></ul>
+          
+          Habiliades: <ul><li>Conocimiento de lenguajes de programación</li><li>Comprension en bases de datos</li>
+            <li>Resolucion de problemas</li><li>Escribir y depurar código</li><li>Conocimientos basicos de Frontend y Backend</li></ul>
+        </ion-card-content>
+
+      </ion-card>
+    </ion-col>
+  </ion-row>
+
+
 </ion-content>

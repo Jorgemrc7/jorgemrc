@@ -1,0 +1,41 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Calculadora</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<div class="calculator-container">
+  <ion-card>
+    <ion-card-content >
+      <ion-input [value]="currentNumber" style="padding: 0%; " ></ion-input>
+    </ion-card-content>
+  </ion-card>
+  
+  
+</div>
+<div class="container">
+  <ion-row>
+    <ion-col size="1"><ion-button (click)="appendNumber('7')">7</ion-button></ion-col>
+    <ion-col size="1"><ion-button (click)="appendNumber('8')">8</ion-button></ion-col>
+    <ion-col size="1"><ion-button (click)="appendNumber('9')">9</ion-button></ion-col>
+    <ion-col size="1"><ion-button (click)="setOperator('/')">/</ion-button></ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col size="1"><ion-button (click)="appendNumber('4')">4</ion-button></ion-col>
+    <ion-col size="1"><ion-button (click)="appendNumber('5')">5</ion-button></ion-col>
+    <ion-col size="1"><ion-button (click)="appendNumber('6')">6</ion-button></ion-col>
+    <ion-col size="1"><ion-button (click)="setOperator('*')">*</ion-button></ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col size="1"><ion-button (click)="appendNumber('1')">1</ion-button></ion-col>
+    <ion-col size="1"><ion-button (click)="appendNumber('2')">2</ion-button></ion-col>
+    <ion-col size="1"><ion-button (click)="appendNumber('3')">3</ion-button></ion-col>
+    <ion-col size="1"><ion-button (click)="setOperator('-')">-</ion-button></ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col size="1"><ion-button (click)="clear()">C</ion-button></ion-col>
+    <ion-col size="1"><ion-button (click)="appendNumber('0')">0</ion-button></ion-col>
+    <ion-col size="1"><ion-button (click)="calculate()">=</ion-button></ion-col>
+    <ion-col size="1"><ion-button (click)="setOperator('+')">+</ion-button></ion-col>
+  </ion-row>
+</div>

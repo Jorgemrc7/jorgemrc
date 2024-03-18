@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-
+import { RedireccionamientooService } from '../services/redireccionamientoo.service';
 @Component({
   selector: 'app-home',
   templateUrl: 'home.page.html',
@@ -7,6 +7,10 @@ import { Component } from '@angular/core';
 })
 export class HomePage {
 
-  constructor() {}
+  constructor(private red:RedireccionamientooService) {}
+
+  redireccion(dir:string){
+    this.red.navegar(dir);
+  }
 
 }

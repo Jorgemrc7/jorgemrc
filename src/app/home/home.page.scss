@@ -17,11 +17,23 @@
   font-size: 16px;
   line-height: 22px;
 
-  color: #8c8c8c;
+  color: #e94444;
 
   margin: 0;
 }
 
 #container a {
   text-decoration: none;
+}
+#cuadro{
+  position: relative;
+  left: 25%;
+  right: 50%;
+}
+#foto{
+  margin: 3px;
+  border: 1px;
+  width: 20%;
+  height: 20%;
+  position: relative;
 }

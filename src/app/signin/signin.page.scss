@@ -1,0 +1,34 @@
+#container{
+    background:#bcefb7;
+    padding: 2px;
+    text-align: center;
+    align-items: center;
+    position: absolute;
+    left: 35%;
+    right: 35%;
+    top: 20%;
+    border-radius: 15px;
+    box-shadow: 0 5px 5px -2px;
+}
+.container{
+    text-align:center;
+    position:absolute;
+    left:30%;
+    right:30%;
+    top: 20%;
+}
+ion-item{
+    box-shadow: 0 5px 5px -2px;
+    border-radius: 15px;
+    margin-top: 3%;
+    
+}
+#eyeicon{
+    visibility: hidden;
+}
+ion-item:hover{
+    --background:#bcefb7;
+    #eyeicon{
+        visibility: visible;
+    }
+}

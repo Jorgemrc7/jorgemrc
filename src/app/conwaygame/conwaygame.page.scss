@@ -1,0 +1,26 @@
+#tablero{
+    width: 100%;
+    height: 100%;
+    margin: 2vh;
+}
+#fila{
+    display: flex;
+}
+#celula0{
+    width: 50px;
+    height: 50px;
+    margin: 1px;
+    background: #f90202;
+}
+#celula1{
+    width: 50px;
+    height: 50px;
+    margin: 1px;
+    background: #000000;
+}
+#celula0:hover{
+    background: #d20f0f;   
+}
+#celula1:hover{
+    background: #e62929;
+}
